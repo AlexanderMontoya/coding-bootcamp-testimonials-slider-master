@@ -47,6 +47,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav__btn--next{
@@ -253,6 +254,13 @@ main{
     .nav__btn img{
         width: 10px;
     }
+
+    .testimonial__name{
+        width: 130px;
+        left: calc(100% - 70%);
+        position: absolute;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 376px){
@@ -268,9 +276,9 @@ main{
     }
     .testimonial__paragraph{
         margin-bottom: 20px;
-    }
-    .testimonial__name{
-        width: 100px;
-        margin: auto;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
